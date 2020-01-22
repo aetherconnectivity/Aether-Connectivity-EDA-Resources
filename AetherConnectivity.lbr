@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -156,7 +156,7 @@
 </layers>
 <library>
 <packages>
-<package name="AETHERMESH_SMD_MOUNT_HOLES">
+<package name="GROWFLUXMESH_SMD_MOUNT_HOLES">
 <smd name="P$1" x="0.254" y="1.7272" dx="3.048" dy="1.524" layer="1" roundness="100" rot="R180"/>
 <smd name="P$2" x="0.254" y="4.2672" dx="3.048" dy="1.524" layer="1" roundness="100" rot="R180"/>
 <smd name="P$3" x="0.254" y="6.8072" dx="3.048" dy="1.524" layer="1" roundness="100" rot="R180"/>
@@ -247,7 +247,7 @@ this line</text>
 <wire x1="33.02" y1="5.3086" x2="33.02" y2="5.7658" width="0.2286" layer="21"/>
 <wire x1="33.02" y1="2.7686" x2="33.02" y2="3.2258" width="0.2286" layer="21"/>
 </package>
-<package name="AETHERMESH_PTH_4.4.0">
+<package name="GROWFLUXMESH_PTH_4.4.0">
 <pad name="GND" x="-0.127" y="0" drill="1"/>
 <pad name="DIO10" x="0.127" y="2.54" drill="1"/>
 <pad name="DIO9" x="-0.127" y="5.08" drill="1"/>
@@ -278,7 +278,7 @@ this line</text>
 <wire x1="34.29" y1="-1.778" x2="34.29" y2="44.5516" width="0.127" layer="48"/>
 <wire x1="-1.27" y1="44.5516" x2="34.29" y2="44.5516" width="0.127" layer="48"/>
 </package>
-<package name="AETHERMESH_MEZZ_MOUNT_NOHOLES">
+<package name="GROWFLUXMESH_MEZZ_MOUNT_NOHOLES">
 <smd name="P$1" x="2" y="-3.5" dx="1.8" dy="0.32" layer="1" rot="R180"/>
 <smd name="P$2" x="2" y="-3" dx="1.8" dy="0.32" layer="1" rot="R180"/>
 <smd name="P$3" x="2" y="-2.5" dx="1.8" dy="0.32" layer="1" rot="R180"/>
@@ -358,7 +358,7 @@ this line</text>
 <wire x1="21.4376" y1="12.8016" x2="22.3266" y2="12.8016" width="0.127" layer="51"/>
 <wire x1="21.8567" y1="12.3444" x2="21.8567" y2="13.2334" width="0.127" layer="51"/>
 </package>
-<package name="AETHERMESH_MEZZ_MOUNT_HOLES">
+<package name="GROWFLUXMESH_MEZZ_MOUNT_HOLES">
 <smd name="P$1" x="2" y="-3.5" dx="1.8" dy="0.32" layer="1" rot="R180"/>
 <smd name="P$2" x="2" y="-3" dx="1.8" dy="0.32" layer="1" rot="R180"/>
 <smd name="P$3" x="2" y="-2.5" dx="1.8" dy="0.32" layer="1" rot="R180"/>
@@ -505,7 +505,7 @@ this line</text>
 </package>
 </packages>
 <symbols>
-<symbol name="AETHERMESH_MODULE">
+<symbol name="GROWFLUXMESH_MODULE">
 <pin name="TMS" x="-7.62" y="25.4" length="middle"/>
 <pin name="TCK" x="-7.62" y="22.86" length="middle"/>
 <pin name="TDO" x="-7.62" y="20.32" length="middle"/>
@@ -542,12 +542,12 @@ this line</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AETHERMESH_MODULE">
+<deviceset name="GROWFLUXMESH_MODULE">
 <gates>
-<gate name="G$1" symbol="AETHERMESH_MODULE" x="2.54" y="0"/>
+<gate name="G$1" symbol="GROWFLUXMESH_MODULE" x="2.54" y="0"/>
 </gates>
 <devices>
-<device name="SMD_HOLES" package="AETHERMESH_SMD_MOUNT_HOLES">
+<device name="SMD_HOLES" package="GROWFLUXMESH_SMD_MOUNT_HOLES">
 <connects>
 <connect gate="G$1" pin="DIO0-RX" pad="P$20"/>
 <connect gate="G$1" pin="DIO1-TX" pad="P$21"/>
@@ -574,7 +574,7 @@ this line</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="4.4.0PTH" package="AETHERMESH_PTH_4.4.0">
+<device name="4.4.0PTH" package="GROWFLUXMESH_PTH_4.4.0">
 <connects>
 <connect gate="G$1" pin="DIO0-RX" pad="DIO0-RX"/>
 <connect gate="G$1" pin="DIO1-TX" pad="DIO1-TX"/>
@@ -601,7 +601,7 @@ this line</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="MEZZ-NOHOLES" package="AETHERMESH_MEZZ_MOUNT_NOHOLES">
+<device name="MEZZ-NOHOLES" package="GROWFLUXMESH_MEZZ_MOUNT_NOHOLES">
 <connects>
 <connect gate="G$1" pin="DIO0-RX" pad="P$23"/>
 <connect gate="G$1" pin="DIO1-TX" pad="P$22"/>
@@ -628,7 +628,7 @@ this line</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="MEZZ-HOLES" package="AETHERMESH_MEZZ_MOUNT_HOLES">
+<device name="MEZZ-HOLES" package="GROWFLUXMESH_MEZZ_MOUNT_HOLES">
 <connects>
 <connect gate="G$1" pin="DIO0-RX" pad="P$23"/>
 <connect gate="G$1" pin="DIO1-TX" pad="P$22"/>
